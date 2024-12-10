@@ -1,0 +1,168 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)), url(../img/bg-game.jpg) no-repeat;
+    background-size: cover;
+    background-position: -50vw;
+    background-color: black;
+    color: white;
+}
+header {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 20px;
+}
+#logo {
+	width: 10rem;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	align-items: center;
+	justify-content: center;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+nav a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+nav a:hover {
+	cursor: pointer;
+	color: #666666;
+}
+@keyframes fadeUp {
+	0% {
+		transform: translate(0, 60%);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+#login-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    padding: 0 150px;
+    margin-top: -90px;
+}
+.content h1{
+    font-size: 3rem;
+    animation: fadeUp 2s normal;
+}
+#right{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    margin-top: -90px;
+    width: 80%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeUp 2s normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+
+}
+#login{
+    margin-bottom: 20px;
+}
+.title{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.inputForm input{
+    padding: 10px;
+    width: 250px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+button{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    margin-bottom: 10px;
+    color: white;
+    background-color: black;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+#fpass{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px){
+    .content h1{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    body{
+        background-position: 0;
+    }
+    nav ul{
+        font-size: 1rem;
+    }
+    #left{
+        display: none;
+        width: 0;
+    }
+    #right{
+        width: 100vw;
+    }
+
+}
+@media screen and (max-width: 660px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding-top: 15px;
+    }
+}
+@media screen and (max-width: 498px){
+    body{
+        overflow: auto;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 0;
+    }
+}

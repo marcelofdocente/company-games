@@ -1,0 +1,116 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	overflow-x: hidden;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+}
+header {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: black;
+}
+#logo {
+	width: 10rem;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	align-items: center;
+	justify-content: center;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+nav a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+nav a:hover {
+	cursor: pointer;
+	color: #666666;
+}
+@keyframes fadeUp {
+	0% {
+		transform: translate(0, 60%);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+h1{
+	font-size: 3rem;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: center;
+    animation: fadeUp 2s normal;
+}
+h3{
+	margin-top: 15px;
+}
+section{
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+#games{
+	width: 80%;
+	gap: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+.game{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    animation: fadeUp 2s normal;
+}
+.game img{
+	width: 260px;
+}
+button{
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #107C0F;
+	color: white;
+	margin-top: 12px;
+	cursor: pointer;
+}
+.game:hover{
+	transform: scale(1.01);
+	cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    header{
+		flex-direction: column;
+		padding-top: 15px;
+	}
+	h1{
+		font-size: 2.5rem;
+	}
+}
+@media screen and (max-width: 570px){
+    nav ul{
+		flex-direction: column;
+		gap: 0;
+	}
+}

@@ -1,0 +1,139 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+    color: white;
+}
+header {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: black;
+}
+#logo {
+	width: 10rem;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+	align-items: center;
+	justify-content: center;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+nav a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+nav a:hover {
+	cursor: pointer;
+	color: #666666;
+}
+@keyframes fadeUp {
+	0% {
+		transform: translate(0, 60%);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+section{
+	display: flex;
+}
+#xbox{
+	width: 50%;
+	max-width: 50%;
+	height: 100vh;
+	background: #107C0F;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.image{
+	height: 250px;
+}
+.image:hover{
+	transform: scale(1.35);
+	cursor: pointer;
+}
+h2{
+	font-size: 2.3rem;
+	margin-top: 80px;
+}
+#ps{
+	width: 50%;
+	height: 100vh;
+	background: #0F3588;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.access{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.5rem;
+	margin-top: 80px;
+	padding: 10px 25px;
+	background-color: black;
+}
+.access:hover{
+	color: #ccc;
+}
+@media screen and (max-width: 896px) {
+    section{
+		flex-direction: column;
+	}
+	#xbox{
+		width: 100vw;
+		height: 45vh;
+		max-width: 100%;
+	}
+	#ps{
+		width: 100vw;
+		height: 55vh;
+		justify-content: flex-start;
+		padding-top: 65px;
+	}
+	.image{
+		height: 100px;
+	}
+	h2{
+		font-size: 2rem;
+		margin-top: 30px;
+	}
+	.access{
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width: 740px){
+	header{
+		flex-direction: column;
+	}
+	nav{
+		padding-top: 15px;
+	}
+}
+@media screen and (max-width: 552px){
+    body{
+		overflow: auto;
+	}
+	nav ul{
+		flex-direction: column;
+		gap: 0;
+	}
+}
